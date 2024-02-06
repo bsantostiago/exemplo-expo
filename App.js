@@ -14,17 +14,19 @@ export default function App() {
     Alert.alert("Yeah!", "Olá 😁");
   };
   return (
-    <SafeAreaView style={estilos.container}>
+    <>
       <StatusBar barStyle="default" />
-      <View style={estilos.um}>
-        <Text style={estilos.titulo}>React Native</Text>
-      </View>
-      <View style={estilos.dois}>
-        <Text style={estilos.subtitulo}>
-          Trabalhando com desenvolvimento de apps
-        </Text>
-        <Button title="Toca aqui mano/mana!" onPress={vai} />
-      </View>
-    </SafeAreaView>
+      <SafeAreaView style={estilos.container}>
+        <View style={estilos.um}>
+          <Text style={estilos.titulo}>React Native</Text>
+        </View>
+        <View style={estilos.dois}>
+          <Text style={estilos.subtitulo}>
+            Trabalhando com desenvolvimento de apps
+          </Text>
+          <Button title="Toca aqui mano/mana!" onPress={vai} />
+        </View>
+      </SafeAreaView>
+    </>
   );
 }
