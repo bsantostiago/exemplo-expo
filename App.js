@@ -1,8 +1,18 @@
-import { SafeAreaView, View, Text, StatusBar, Button } from "react-native";
+import {
+  SafeAreaView,
+  View,
+  Text,
+  StatusBar,
+  Button,
+  Alert,
+} from "react-native";
 
 import estilos from "./estilos";
 
 export default function App() {
+  const vai = () => {
+    Alert.alert("Yeah!", "Olá 😁");
+  };
   return (
     <SafeAreaView style={estilos.container}>
       <StatusBar barStyle="default" />
@@ -13,7 +23,7 @@ export default function App() {
         <Text style={estilos.subtitulo}>
           Trabalhando com desenvolvimento de apps
         </Text>
-        <Button title="Toca aqui mano/mana!" />
+        <Button title="Toca aqui mano/mana!" onPress={vai} />
       </View>
     </SafeAreaView>
   );
